@@ -1,0 +1,28 @@
+body{
+    background-image: linear-gradient(to bottom,#f0f9fe,#f0f9fe);
+}
+.navbar{
+    background-image: linear-gradient(to bottom,#f0f9fe,#f0f9fe);
+    /* background-color: #f0f9fe; */
+}
+.navbar img{
+    width: 125px;
+    margin-left: 10px;
+}
+.navbar li{
+    padding-right: 15px;
+}
+.navbar li a{
+    font-weight: 600;
+}
+.navbar li a:hover{
+    border-bottom: 1px solid #015A64;
+    font-weight: 700;
+}
+footer{
+    background-image: linear-gradient(to bottom,#f0f9fe,#f0f9fe);
+}
+.heading{
+    color: #015A64;
+}
+

@@ -1,0 +1,162 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+/>
+    <title>DewHill Resorts | Home</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <img src="{% static 'images/nav-logo.png' %}" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}" style="color:#015A64">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:#015A64">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:#015A64">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}" style="color:#015A64">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+            {% block content %}
+            {% endblock %}
+
+
+      <!-- Footer -->
+      <div class="row" style="margin: 0px;">
+        <div class="col-lg-12 font-weight-normal" style="padding: 0px;color: #015A64;">
+          <footer class="text-center">
+            <!-- Section: Social media -->
+            <section
+              class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+            >
+              <!-- Left -->
+              <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+              </div>
+              <!-- Left -->
+
+              <!-- Right -->
+              <div>
+                <a href="" class="me-4 text-reset p-4">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset p-4">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset p-4">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </div>
+              <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      <i class="fa fa-gem me-3" ></i>DewHill RESORTS
+                    </h6>
+                    <p>
+                        We are bringing you a priceless opportunity to invest in this 
+                        stupendous yet placid locale. It is the best choice to put your 
+                        money on when you have good management associated with 
+                        a trusted brand.
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+
+            
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Useful links
+                    </h6>
+                    <p>
+                      <a href="#!" class="text-reset">About Us</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Gallery</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Contact Us</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Contact
+                    </h6>
+                    <p><i class="fa fa-home me-3"></i> PADINJARATHARA ,Wayanad</p>
+                    <p>
+                      <i class="fa fa-envelope me-3"></i>
+                      info@crossfit.com
+                    </p>
+                    <p><i class="fa fa-phone me-3"></i> + 01 234 567 88</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4">
+              © 2021 Copyright:
+              <a class="text-reset fw-bold" href="">crossfit.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+        </div>
+      </div>
+<!-- Footer -->
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
